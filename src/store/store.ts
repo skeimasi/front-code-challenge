@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dialogReducer from "../reducers/dialogReducer";
+import listReducer from "../reducers/listReducer";
 export const store = configureStore({
     reducer: {
-        dialogSlice: dialogReducer
+        listSlice: listReducer
     }
 })
 
