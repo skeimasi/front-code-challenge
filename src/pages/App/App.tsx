@@ -8,6 +8,7 @@ import WithSearchBar from '../../hoc/WithSearchbar';
 import { removeFromList } from '../../reducers/listReducer';
 import { RootState } from '../../store/store';
 import './App.css';
+import ArzwallLogo from '../../assets/images/logo-ivest.png';
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <AppBar style={{ padding: 5, display: "flex", justifyContent: "space-between", flexDirection: "row" }}>
+        <img alt="#" src={ArzwallLogo} height={30} />
         <Typography>Code Challenge</Typography>
         <IconButton onClick={() => showHelp(true)}>
           <Help style={{ color: "white" }} />
@@ -65,7 +67,7 @@ function App() {
           <Typography variant='h4'>آیتم های مورد نیاز</Typography>
           <Typography>با استفاده از api  های فیک دو لیست دریافت کرده و در دو کامپوننت مجزا نمایش داده شوند</Typography>
           <Typography>هر کدام از لیست ها قابلیت فیلتر داشته باشند</Typography>
-          <Typography>با کلیک بر روی آیتم های هر لیت ، آن آیتم به لیست دست راستی اضافه شود</Typography>
+          <Typography>با کلیک بر روی آیتم های هر لیست ، آن آیتم به لیست دست راستی اضافه شود</Typography>
           <Typography>با کلیک بر روی آیتم های لیست دست راست، آن آیتم حذف شود</Typography>
           <Typography>از typescript , redux , material ui  استفاده شود</Typography>
           <Typography></Typography>
